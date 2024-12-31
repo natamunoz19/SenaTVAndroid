@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <!-- Login Image -->
+        <ImageView
+            android:id="@+id/recoveryImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/senatv"
+            android:contentDescription="Register Image"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Tittle -->
+        <TextView
+            android:id="@+id/recoveryTittle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¿Tienes problemas para entrar?"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Tittle -->
+        <TextView
+            android:id="@+id/recoverySubtittle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingresa tu correo electrónico y te enviaremos un enlace para que recuperes el acceso a tu cuenta."
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Email Input -->
+        <EditText
+            android:id="@+id/emailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Recovery Button -->
+        <Button
+            android:id="@+id/recoveryButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enviar verificación"
+            android:backgroundTint="@android:color/black"
+            android:textColor="@android:color/white" />
+
+        <!-- Tittle -->
+        <TextView
+            android:id="@+id/recoveryBlock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¿ Necesitas más ayuda ?"
+            android:textSize="14sp"
+            android:textAlignment="center"
+            android:padding="2dp" />
+
+    </LinearLayout>
+
+</ScrollView>

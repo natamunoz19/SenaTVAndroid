@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <!-- Login Image -->
+        <ImageView
+            android:id="@+id/registerImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/senatv"
+            android:contentDescription="Register Image"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Tittle -->
+        <TextView
+            android:id="@+id/registerTittle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Crear cuenta"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Email Input -->
+        <EditText
+            android:id="@+id/emailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Name Input -->
+        <EditText
+            android:id="@+id/nameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Last Name Input -->
+        <EditText
+            android:id="@+id/lastNameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Apellido"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Password Input -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <EditText
+                android:id="@+id/passwordInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="8dp" />
+
+            <ImageButton
+                android:id="@+id/togglePasswordVisibility"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/outline_remove_red_eye_24"
+                android:background="@android:color/transparent" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- Confirm Password Input -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginBottom="24dp"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <EditText
+                android:id="@+id/confirmPasswordInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:padding="8dp" />
+
+            <ImageButton
+                android:id="@+id/toggleConfirmPasswordVisibility"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/outline_remove_red_eye_24"
+                android:background="@android:color/transparent" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- Register Button -->
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrar"
+            android:backgroundTint="@android:color/black"
+            android:textColor="@android:color/white" />
+
+        <!-- Tittle -->
+        <TextView
+            android:id="@+id/registerTerms1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Al aceptar una cuenta o registrarte,"
+            android:textSize="14sp"
+            android:textAlignment="center"
+            android:padding="2dp" />
+
+        <!-- Tittle -->
+        <TextView
+            android:id="@+id/registerTerms2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="aceptas nuestros:"
+            android:textSize="14sp"
+            android:textAlignment="center"
+            android:padding="2dp"/>
+
+        <!-- Tittle -->
+        <TextView
+            android:id="@+id/registerTerms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Términos y condiciones"
+            android:textSize="14sp"
+            android:textAlignment="center"
+            android:padding="2dp"
+            android:layout_marginBottom="16dp" />
+
+    </LinearLayout>
+
+</ScrollView>
