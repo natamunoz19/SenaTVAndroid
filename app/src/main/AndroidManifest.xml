@@ -23,10 +23,10 @@
             android:name=".RecoveryActivity"
             android:exported="false" />
         <activity
-            android:name="RegisterActivity"
+            android:name=".RegisterActivity"
             android:exported="false" />
         <activity
-            android:name="LoginActivity"
+            android:name=".LoginActivity"
             android:exported="false" />
         <activity
             android:name=".SplashActivity"

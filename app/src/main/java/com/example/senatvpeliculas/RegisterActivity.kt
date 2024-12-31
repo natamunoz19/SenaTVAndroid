@@ -1,4 +1,5 @@
-import android.content.Intent
+package com.example.senatvpeliculas
+
 import android.os.Bundle
 import android.text.SpannableString
 import android.text.method.HideReturnsTransformationMethod
@@ -10,7 +11,6 @@ import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.senatvpeliculas.R
 
 class RegisterActivity : AppCompatActivity() {
 
